@@ -42,7 +42,7 @@ while True :
         if d >= 5 :
             break 
 
-turtle.done
+turtle.done()
 
 
 
