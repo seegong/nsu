@@ -2,44 +2,44 @@ import turtle
 import tkinter
 import random
 
+a = 300
 _ = 300
-__ = 300
-___ = 3
-____ = 0
+c = 3
+d = 0
 
-_____,______,_______,________,_________,__________,___________= [0] * 7
+r,g,b,h,i,j,e = [0] * 7
 
 turtle.title('거북이 맘대로 싸돌아다니기')
 
 turtle.shape('turtle')
-turtle.pensize(___)
-turtle.setup(width= __ + 30, height= __+30)
-turtle.screensize(_,__)
+turtle.pensize(c)
+turtle.setup(width= a + 30, height= _+30)
+turtle.screensize(a,_)
 
 
 while True :
-    _____ = random.random()
-    ______ = random.random()
-    _______ = random.random()
-    turtle.pencolor((_____,______,_______))
+    r = random.random()
+    g = random.random()
+    b = random.random()
+    turtle.pencolor((r,g,b))
 
 
-    ________ = random.randrange(0,360)
-    _________ = random.randrange(1,100)
+    h = random.randrange(0,360)
+    i = random.randrange(1,100)
     turtle.left(h)
     turtle.forward(i)
-    __________ = turtle.xcor()
-    ___________ = turtle.ycor()
+    j = turtle.xcor()
+    e = turtle.ycor()
 
-    if (-_ / 2 <= __________ and __________ <= _/2) and (-__/ 2 <= ___________ and ___________ <=__/ 2):
+    if (-a / 2 <= j and j <= a/2) and (-_ / 2 <= e and e <=_ / 2):
         pass
     else :
         turtle.penup
         turtle.goto(0,0)
         turtle.pendown
 
-        ____ += 1 
-        if ____ >= 5 :
+        d += 1 
+        if d >= 5 :
             break 
 
 turtle.done()
